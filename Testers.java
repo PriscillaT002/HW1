@@ -27,7 +27,7 @@ public class Testers{
 
     }
 
-    //main changes
+    //main
 
     public static void main(String[] args){
         //creating an input array for testtinf
