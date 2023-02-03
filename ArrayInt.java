@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 
 public class ArrayInt{
-    //isElement
+    //isElement pseudo code
     /* 
     input: array[], int value
     output:boolean
@@ -35,12 +35,12 @@ public class ArrayInt{
         for(array2 == []; <= array.length; i ++)
             array2[] = array[];
                 return array2;
-                */
+                
 
 
     //tester for copyAll
 
-    }
+    }*/
 
     //main
 
