@@ -1,4 +1,5 @@
 import java.util.Arrays; 
+//package com.gradescope.arrays;
 
 
 public class ArrayInt{
@@ -24,6 +25,7 @@ public class ArrayInt{
     //2. addAllfunction
     //Tester for addAllfunction
     public static void testAddAll(){
+
         int [] testArray={1,2,3,4};
         System.out.println("1.===== Testing: addAll ======");
         System.out.print("Input array: ");
@@ -72,10 +74,17 @@ public class ArrayInt{
             return false;
     }
     //Tester for isElementfunction
-    public static void test_isElement(int [] array) {
-        int value = array[array.length - 1]; //selecting an element from the array
-        System.out.println("Testing isElement with value:" + value);
-        System.out.println("Result:" + isElement(array, value)); //Expected to return true
+    public static void testisElement() {
+        int [] testArray={1,2,3,4};
+        int value = 3;
+        System.out.println("7.====== Testing: isElement =====");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        System.out.print("Input value: ");
+        System.out.println(value);
+        boolean present = isElement(testArray);
+        System.out.println("Present?:" + present);
+        System.out.println("7. === Done:isElement\n");
 
     }
 
@@ -109,14 +118,19 @@ public class ArrayInt{
     //13. reversefunction
     //Tester for reversefunction
 
+    //returnReverse pseudo code
+    /* */
+    //14. returnReversefunction
+    //Tester for returnReversefunction
+
     //intersection pseudo code
     /* */
-    //14. intersectionfunction
+    //15. intersectionfunction
     //Tester for intersectionfunction
 
     //union pseudo code
     /* */
-    //14. unionfunction
+    //16. unionfunction
     //Tester for unionfunction
 
 
@@ -128,6 +142,7 @@ public class ArrayInt{
         //Test Main Functions
         //===================
         //testCopy();
+        //testaddAll();
         //testAddArrays();
         //testFindAverage();
         //testSwap();
@@ -138,6 +153,7 @@ public class ArrayInt{
         //testFindMax();
         //testFindMaxIndex();
         //testReverse();
+        //testReturnReverse();
         //testIntersection();
         //testUnion();
 
