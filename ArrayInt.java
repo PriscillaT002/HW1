@@ -81,43 +81,43 @@ public class ArrayInt{
 
     //indexOf pseudo code
     /* */
-    //8. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //8. indexOffunction
+    //Tester for indexOffunction
 
     //findMin pseudo code
     /* */
-    //9. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //9. findMinfunction
+    //Tester for findMinfunction
 
     //findMinIndex pseudo code
     /* */
-    //10. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //10. findMinIndexfunction
+    //Tester for findMinIndexfunction
 
     //findMax pseudo code
     /* */
-    //11. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //11. findMaxfunction
+    //Tester for findMaxfunction
 
     //findMaxIndex pseudo code
     /* */
-    //12. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //12. findMaxIndexfunction
+    //Tester for findMaxIndexfunction
 
     //reverse pseudo code
     /* */
-    //13. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //13. reversefunction
+    //Tester for reversefunction
 
     //intersection pseudo code
     /* */
-    //14. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //14. intersectionfunction
+    //Tester for intersectionfunction
 
     //union pseudo code
     /* */
-    //14. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    //14. unionfunction
+    //Tester for unionfunction
 
 
 
