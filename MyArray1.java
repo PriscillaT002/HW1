@@ -2,7 +2,7 @@ import java.util.Arrays;
 //package com.gradescope.arrays;
 
 
-public class ArrayInt{
+public class MyArray1{
 
     // 0. helper functions
      static String arrayToString(int[] array){
