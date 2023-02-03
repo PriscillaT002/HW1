@@ -2,6 +2,59 @@ import java.util.Arrays;
 
 
 public class ArrayInt{
+
+    // 0. helper functions
+     static String arrayToString(int[] array){
+        String arrString= " ";
+        for (int i=0; i <array.length; i++){
+            arrString+=" " + array[i];
+        };
+        return arrString;
+    }
+
+
+    //copy pseudo code
+    /* */
+    //1. copyfunction
+    //Tester for copyfunction
+
+
+    //addAll pseudo code
+    /* */
+    //2. addAllfunction
+    //Tester for addAllfunction
+    public static void testAddAll(){
+        int [] testArray={1,2,3,4};
+        System.out.println("1.===== Testing: addAll ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int total = addAll(testArray);
+        System.out.println("Total:"+total);
+        System.out.println("1. ===Done: addAll\n");
+
+    }
+
+    //addArrays pseudo code
+    /* */
+    //3. addArraysfunction
+    //Tester for addArraysfunction
+
+    //multiplyAll pseudo code
+    /* */
+    //4. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+
+    //findAverage pseudo code
+    /* */
+    //5. findAveragefunction
+    //Tester for findAveragefunction
+
+    //swap pseudo code
+    /* */
+    //6. swapfunction
+    //Tester for swapfunction
+
     //isElement pseudo code
     /* 
     input: array[], int value
@@ -11,18 +64,14 @@ public class ArrayInt{
             if array[i]= value
             return true
         return false*/
-        
-    //isELelementfunction
+    //7. isElementfunction
     public static boolean isElement(int[] array,int value) {
         for(int i =0; i < array.length; i ++)
             if(array[i] == value)
                 return true;
             return false;
     }
-
-
-
-    //tester for isElement
+    //Tester for isElementfunction
     public static void test_isElement(int [] array) {
         int value = array[array.length - 1]; //selecting an element from the array
         System.out.println("Testing isElement with value:" + value);
@@ -30,27 +79,68 @@ public class ArrayInt{
 
     }
 
-    //copyAll function
-    /*public static void copyAll(int[] array, int[] array2) {
-        for(array2 == []; <= array.length; i ++)
-            array2[] = array[];
-                return array2;
-                
+    //indexOf pseudo code
+    /* */
+    //8. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //findMin pseudo code
+    /* */
+    //9. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //findMinIndex pseudo code
+    /* */
+    //10. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //findMax pseudo code
+    /* */
+    //11. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //findMaxIndex pseudo code
+    /* */
+    //12. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //reverse pseudo code
+    /* */
+    //13. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //intersection pseudo code
+    /* */
+    //14. multiplyAllfunction
+    //Tester for multiplyAllfunction
+
+    //union pseudo code
+    /* */
+    //14. multiplyAllfunction
+    //Tester for multiplyAllfunction
 
 
-    //tester for copyAll
 
-    }*/
-
-    //main
-
+    //main: runs tester functions
     public static void main(String[] args){
-        //creating an input array for testtinf
-        int[] array = {3,4,5,12,87,31,56,32,29,0,4,5,6,7};
-        //printing the array
-        System.out.println("Array for testing:" + Arrays.toString(array));
-        //Run tests
-        test_isElement(array);
+
+        //===================
+        //Test Main Functions
+        //===================
+        //testCopy();
+        //testAddArrays();
+        //testFindAverage();
+        //testSwap();
+        //testIsElement();
+        //testIndexOf();
+        //testFindMin();
+        //testFindMinIndex();
+        //testFindMax();
+        //testFindMaxIndex();
+        //testReverse();
+        //testIntersection();
+        //testUnion();
+
     }
 
     
