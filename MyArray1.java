@@ -21,8 +21,20 @@ public class MyArray1{
 
 
     //addAll pseudo code
-    /* */
+    /*   
+    input: array[]
+    output:int sum
+    method:
+        int array[] = {}
+        int sum()
+        int sum = 0
+        for i = 0; i < array.length
+            sum += array[i]
+        return sum*/
     //2. addAllfunction
+    public static void addAll(int[] array){
+
+    }
     //Tester for addAllfunction
     public static void testAddAll(){
 
