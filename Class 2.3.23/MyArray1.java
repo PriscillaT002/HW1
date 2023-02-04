@@ -1,6 +1,6 @@
 import java.util.Arrays;
 //package com.gradescope.arrays;
-//comment
+//comments
 
 
 public class MyArray1{
