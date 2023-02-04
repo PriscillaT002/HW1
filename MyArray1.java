@@ -32,7 +32,16 @@ public class MyArray1{
             sum += array[i]
         return sum*/
     //2. addAllfunction
-    public static void addAll(int[] array){
+    public static int addAll(int[] array) {
+        {
+            int sum = 0;
+            int i;
+            for (i = 0; i < array.length; i ++)
+                sum += array[i];
+            return sum;
+
+
+        }
 
     }
     //Tester for addAllfunction
@@ -79,26 +88,26 @@ public class MyArray1{
             return true
         return false*/
     //7. isElementfunction
-    public static boolean isElement(int[] array,int value) {
-        for(int i =0; i < array.length; i ++)
-            if(array[i] == value)
-                return true;
-            return false;
-    }
+    // public static boolean isElement(int[] array,int value) {
+    //     for(int i =0; i < array.length; i ++)
+    //         if(array[i] == value)
+    //             return true;
+    //         return false;
+    // }
     //Tester for isElementfunction
-    public static void testisElement() {
-        int [] testArray={1,2,3,4};
-        int value = 3;
-        System.out.println("7.====== Testing: isElement =====");
-        System.out.print("Input array: ");
-        System.out.println(arrayToString(testArray));
-        System.out.print("Input value: ");
-        System.out.println(value);
-        boolean present = isElement(testArray);
-        System.out.println("Present?:" + present);
-        System.out.println("7. === Done:isElement\n");
+    // public static void testisElement() {
+    //     int [] testArray={1,2,3,4};
+    //     int value = 3;
+    //     System.out.println("7.====== Testing: isElement =====");
+    //     System.out.print("Input array: ");
+    //     System.out.println(arrayToString(testArray));
+    //     System.out.print("Input value: ");
+    //     System.out.println(value);
+    //     boolean present = isElement(testArray);
+    //     System.out.println("Present?:" + present);
+    //     System.out.println("7. === Done:isElement\n");
 
-    }
+    // }
 
     //indexOf pseudo code
     /* */
@@ -154,7 +163,7 @@ public class MyArray1{
         //Test Main Functions
         //===================
         //testCopy();
-        //testaddAll();
+        testAddAll();
         //testAddArrays();
         //testFindAverage();
         //testSwap();
