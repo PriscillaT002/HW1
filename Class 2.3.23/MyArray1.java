@@ -284,7 +284,39 @@ public class MyArray1{
             return
         return index*/
     //8. indexOffunction
+    public static int indexOf(int[] array, int value) {
+             {
+                int length = array.length;
+                int i = 0;
+                while (i< length) {
+                    if (array[i] == value){
+                        return i;
+                    }
+                    else {
+                        i = i + 1;
+                    }
+                }
+                return -1;
+    
+             }
+    
+          }
+
     //Tester for indexOffunction
+    public static void testIndexOf(){
+
+             int [] testArray={1,2,3,4};
+             int value = 3;
+             System.out.println("8.===== Testing: indexOf ======");
+             System.out.print("Input array: ");
+             System.out.println(arrayToString(testArray));
+             System.out.print("Input value: ");
+             System.out.println(value);
+             int index = indexOf(testArray);
+             System.out.println("Index:"+index);
+             System.out.println("8. ===Done: indexOf===\n");
+    
+         }
 
     //findMin pseudo code
     /* input: array[]
@@ -404,7 +436,7 @@ public class MyArray1{
         //testFindAverage();
         //testSwap();
         //testIsElement();
-        //testIndexOf();
+        testIndexOf();
         //testFindMin();
         //testFindMinIndex();
         //testFindMax();
