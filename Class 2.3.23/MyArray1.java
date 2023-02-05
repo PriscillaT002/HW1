@@ -1,6 +1,6 @@
 import java.util.Arrays;
-//package com.gradescope.arrays;
-//comments
+//package com.gradescope.arrays; used for gradescope 
+
 
 
 public class MyArray1{
@@ -16,9 +16,41 @@ public class MyArray1{
 
 
     //copy pseudo code
-    /* */
+    /*  input: array[]
+    output:new array[]
+    method:
+        int array[] = {}
+        int new array [] = new int[array.length];
+        for (i = 0; i < array.length; i++)
+            new array[i] = array[i];
+        return new array*/
     //1. copyfunction
+    // public static copy(int[] array) {
+    //     {
+    //         int newArray [] = new int[array.length]; 
+    //         int i;
+    //         for (i = 0; i < array.length; i ++)
+    //             newArray [i] = array[i];
+    //             newArray[0]++;
+    //         return newArray;
+
+
+    //     }
+
+    // }
+
     //Tester for copyfunction
+    // public static void testCopy(){
+
+    //     int [] testArray={1,2,3,4};
+    //     System.out.println("1.===== Testing: Copy ======");
+    //     System.out.print("Input array: ");
+    //     System.out.println(arrayToString(testArray));
+    //     int copy = copy(testArray);
+    //     System.out.println("Copy:"+ copy);
+    //     System.out.println("1. ===Done: copy===\n");
+
+    // }
 
 
     //addAll pseudo code
@@ -33,51 +65,183 @@ public class MyArray1{
             sum += array[i]
         return sum*/
     //2. addAllfunction
-    public static int addAll(int[] array) {
-        {
-            int sum = 0;
-            int i;
-            for (i = 0; i < array.length; i ++)
-                sum += array[i];
-            return sum;
+    // public static int addAll(int[] array) {
+    //     {
+    //         int sum = 0;
+    //         int i;
+    //         for (i = 0; i < array.length; i ++)
+    //             sum += array[i];
+    //         return sum;
 
 
-        }
+    //     }
 
-    }
-    //Tester for addAllfunction
-    public static void testAddAll(){
+    //  }
+    // //Tester for addAllfunction
+    // public static void testAddAll(){
 
-        int [] testArray={1,2,3,4};
-        System.out.println("1.===== Testing: addAll ======");
-        System.out.print("Input array: ");
-        System.out.println(arrayToString(testArray));
-        int total = addAll(testArray);
-        System.out.println("Total:"+total);
-        System.out.println("1. ===Done: addAll\n");
+    //     int [] testArray={1,2,3,4};
+    //     System.out.println("2.===== Testing: addAll ======");
+    //     System.out.print("Input array: ");
+    //     System.out.println(arrayToString(testArray));
+    //     int total = addAll(testArray);
+    //     System.out.println("Total:"+total);
+    //     System.out.println("2. ===Done: addAll===\n");
 
-    }
+    // }
 
     //addArrays pseudo code
-    /* */
+    /* input: array[], array2[]
+    output:new array[]
+    method:
+        int array[] = {}
+        int array2[] = {}
+        int length = array.length < array2.length
+        int[] new array = new int [length];
+        for (i = 0; i < length; i ++)
+            new array [i] = array[i] + array2[i];
+        return new array*/
     //3. addArraysfunction
-    //Tester for addArraysfunction
+    // public static int[] addArrays(int[] array, int[] array2) {
+    //          {
+    //             int[] length = array.length < array2.length ? array.length : array2.length;
+    //             int[] newArray = new int[length];
+    //             for (i = 0; i < length; i++) {
+    //                 newArray [i] = array[i] + array2[i]; }
+    //             return newArray;
+    //             }
+
+    //          }
+
+    // //Tester for addArraysfunction
+    // public static void testAddArrays(){
+
+    //          int [] testArray={1,2,3,4};
+    //          int [] testArray2={1,2,3,4};
+    //          System.out.println("3.===== Testing: addArrays ======");
+    //          System.out.print("Input array: \n");
+    //          System.out.println(arrayToString(testArray));
+    //          System.out.println(arrayToString(testArray2));
+    //          total = addArrays(testArray, testArray2);
+    //          System.out.println("Total:"+total);
+    //          System.out.println("3. ===Done: addArrays===\n");
+    
+    //      }
 
     //multiplyAll pseudo code
-    /* */
+    /*input: array[]
+    output:int sum
+    method:
+        int array[] = {}
+        int product()
+        int product = 0
+        for i = 0; i < array.length
+            product *= array[i]
+        return product */
     //4. multiplyAllfunction
-    //Tester for multiplyAllfunction
+    // public static int multiplyAll(int[] array) {
+    //          {
+    //             int product = 1;
+    //              int i;
+    //              for (i = 0; i < array.length; i ++)
+    //                  product = product * array[i];
+    //              return product;
+    
+    
+    //          }
+    
+    //       }
+    // //Tester for multiplyAllfunction
+    //   public static void testMultiplyAll(){
+
+    //      int [] testArray={1,2,3,4};
+    //      System.out.println("4.===== Testing: MultiplyAll ======");
+    //      System.out.print("Input array: ");
+    //      System.out.println(arrayToString(testArray));
+    //      int total = multiplyAll(testArray);
+    //      System.out.println("Total:"+total);
+    //      System.out.println("4. ===Done: MultiplyAll===\n");
+
+    //  }
 
 
     //findAverage pseudo code
-    /* */
+    /* input: array[]
+    output:int sum
+    method:
+        int array[] = {}
+        int average()
+        int average = 0
+        for i = 0; i < array.length
+            average *= array[i]/2
+        return average*/
     //5. findAveragefunction
-    //Tester for findAveragefunction
+    // public static int findAverage(int[] array) {
+    //     {
+    //        int total = 0;
+    //         int i;
+    //         for (i = 0; i < array.length; i ++)
+    //             total += array[i];
+    //             int average = total / array.length;
+    //             return average;
+
+
+    //     }
+
+    //  }
+
+    // //Tester for findAveragefunction
+    // public static void testFindAverage(){
+
+    //     int [] testArray={5,5,5,5,5};
+    //     System.out.println("5.===== Testing: FindAverage ======");
+    //     System.out.print("Input array: ");
+    //     System.out.println(arrayToString(testArray));
+    //     int Average = findAverage(testArray);
+    //     System.out.println("Average:"+Average);
+    //     System.out.println("5. ===Done: FindAverage===\n");
+
+    // }
 
     //swap pseudo code
-    /* */
+    /* input: array[], int index1, int index2
+    output:array[]
+    method:
+        temp = array[index2]
+        array[index2]=arry[index1]
+        array[index1]= temp
+        return array*/
     //6. swapfunction
-    //Tester for swapfunction
+    // public static int swap(int[] array, int index1, int index2) {
+    //     {
+    //        temp = array[index1];
+    //        array[index2] = array[index1];
+    //        array[index1] = temp;
+    //        return array;
+
+
+    //     }
+
+    //  }
+
+    // //Tester for swapfunction
+    // public static void testSwap(){
+
+    //     int [] testArray={1,2,3,4,5};
+    //     int first = 3;
+    //     int second = 5;
+    //     System.out.println("6.===== Testing: Swap ======");
+    //     System.out.print("Input array: ");
+    //     System.out.println(arrayToString(testArray));
+    //     System.out.print("Input 1st Element: ");
+    //     System.out.println(first);
+    //     System.out.print("Input 2nd Element: ");
+    //     System.out.println(second);
+    //     int [] Array = swap(testArray);
+    //     System.out.println("Array with Swapped Elements:" + Array);
+    //     System.out.println("6. ===Done: Swap===\n");
+
+    // }
 
     //isElement pseudo code
     /* 
@@ -95,7 +259,7 @@ public class MyArray1{
     //             return true;
     //         return false;
     // }
-    //Tester for isElementfunction
+    // //Tester for isElementfunction
     // public static void testisElement() {
     //     int [] testArray={1,2,3,4};
     //     int value = 3;
@@ -104,7 +268,7 @@ public class MyArray1{
     //     System.out.println(arrayToString(testArray));
     //     System.out.print("Input value: ");
     //     System.out.println(value);
-    //     boolean present = isElement(testArray);
+    //     present = isElement(testArray);
     //     System.out.println("Present?:" + present);
     //     System.out.println("7. === Done:isElement\n");
 
@@ -164,8 +328,9 @@ public class MyArray1{
         //Test Main Functions
         //===================
         //testCopy();
-        testAddAll();
+        //testAddAll();
         //testAddArrays();
+        //testMultiplyAll();
         //testFindAverage();
         //testSwap();
         //testIsElement();
