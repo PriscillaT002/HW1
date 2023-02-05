@@ -377,17 +377,27 @@ public class MyArray1{
             min = array[i]
             return max*/
     //11. findMaxfunction
-    //Tester for findMaxfunction
-    // public static void testFindMax(){
-    //     int [] testArray={1,2,3,4};
-    //     System.out.println("11.===== Testing: findMax ======");
-    //     System.out.print("Input array: ");
-    //     System.out.println(arrayToString(testArray));
-    //     int max = findMax(testArray);
-    //     System.out.println("Maximum:"+max);
-    //     System.out.println("11. ===Done: findMax===\n");
+    public static int findMax(int[] array) {
+        
+        int i ; int max;
+        max = array[0];
+        for (i=0; i<array.length;i++) 
+            if (max < array[i])
+            max = array[i];
+            return max;
 
-    // }
+     }
+    //Tester for findMaxfunction
+    public static void testFindMax(){
+        int [] testArray={1,2,3,4};
+        System.out.println("11.===== Testing: findMax ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int max = findMax(testArray);
+        System.out.println("Maximum:"+max);
+        System.out.println("11. ===Done: findMax===\n");
+
+    }
 
     //findMaxIndex pseudo code
     /* input: array[]
@@ -545,7 +555,7 @@ public class MyArray1{
         testIndexOf();
         testFindMin(); 
         //testFindMinIndex();
-        //testFindMax();
+        testFindMax();
         //testFindMaxIndex();
         testReverse();                  /*FIX*/
         testReturnReverse();
