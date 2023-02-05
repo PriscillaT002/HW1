@@ -321,17 +321,28 @@ public class MyArray1{
             min = array[i]
             return min*/
     //9. findMinfunction
-    //Tester for findMinfunction
-    // public static void testFindMin(){
-    //     int [] testArray={1,2,3,4};
-    //     System.out.println("9.===== Testing: findMin ======");
-    //     System.out.print("Input array: ");
-    //     System.out.println(arrayToString(testArray));
-    //     int min = findMin(testArray);
-    //     System.out.println("Minimum:"+min);
-    //     System.out.println("9. ===Done: findMin===\n");
+    public static int findMin(int[] array) {
+        
+        int i ; int min;
+        min = array[0];
+        for (i=0; i<array.length;i++) 
+            if (min > array[i])
+            min = array[i];
+            return min;
 
-    // }
+     }
+
+    //Tester for findMinfunction
+    public static void testFindMin(){
+        int [] testArray={1,2,3,4};
+        System.out.println("9.===== Testing: findMin ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int min = findMin(testArray);
+        System.out.println("Minimum:"+min);
+        System.out.println("9. ===Done: findMin===\n");
+
+    }
 
     //findMinIndex pseudo code
     /* input: array[]
@@ -532,11 +543,11 @@ public class MyArray1{
         testSwap();
         testIsElement();
         testIndexOf();
-        //testFindMin(); 
+        testFindMin(); 
         //testFindMinIndex();
         //testFindMax();
         //testFindMaxIndex();
-        testReverse();
+        testReverse();                  /*FIX*/
         testReturnReverse();
         //testIntersection();
         //testUnion();
