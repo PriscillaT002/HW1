@@ -532,11 +532,11 @@ public class MyArray1{
     //15. intersectionfunction
     public static int[] intersection(int[] array, int[] array2) {
         {
-           int length = array.length < array2.length ? array.length : array2.length;
-           int[] newArray = new int[length];
-           for (int i = 0; i < length; i++) {
-               newArray [i] = array[i] + array2[i]; }
-           return newArray;
+            for(int i =0; i<array.length;i++)
+            for (int j =0; i < array2.length; j++)
+                if (array[i]==array2[j])
+                newArray[] = array2[]
+            return newArray;
            }
 
         }
@@ -549,7 +549,7 @@ public class MyArray1{
         System.out.println(arrayToString(testArray));
         System.out.print("Input Second array: ");
         System.out.println(arrayToString(testArray2));
-        int intersection = intersection(testArray, testArray2);
+        int[] intersection = intersection(testArray, testArray2);
         System.out.println("Intersection of Arrays:"+intersection);
         System.out.println("15. ===Done: Intersection===\n");
 
