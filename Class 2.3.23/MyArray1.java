@@ -408,17 +408,26 @@ public class MyArray1{
             array[n-i-1]=temp
             return array[n]*/
     //13. reversefunction
-    //Tester for reversefunction
-    // public static void testReverse(){
-    //     int [] testArray={1,2,3,4};
-    //     System.out.println("13.===== Testing: reverse ======");
-    //     System.out.print("Input array: ");
-    //     System.out.println(arrayToString(testArray));
-    //     int reverse = reverse(testArray);
-    //     System.out.println("Reversed Array:"+reverse);
-    //     System.out.println("13. ===Done: reverse ===\n");
+    public static int[] reverse(int[] array) {
+        int[] Array = new int[array.length];
 
-    // }
+        for (int i = 0; i < array.length ; i++) {
+            Array[array.length - 1 -i] = array [i];
+        }
+            return Array; 
+    } 
+
+    //Tester for reversefunction
+    public static void testReverse(){
+        int [] testArray={1,2,3,4};
+        System.out.println("13.===== Testing: reverse ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int[] reverse = reverse(testArray);
+        System.out.println("Reversed Array:"+arrayToString(reverse));
+        System.out.println("13. ===Done: reverse===\n");
+
+    }
 
     //returnReverse pseudo code                     
     /* input: array[]
@@ -433,17 +442,26 @@ public class MyArray1{
             new array[i] = array[i];
         return new array*/
     //14. returnReversefunction
-    //Tester for returnReversefunction
-    // public static void testReturnReverse(){
-    //     int [] testArray={1,2,3,4};
-    //     System.out.println("14.===== Testing: Returnreverse ======");
-    //     System.out.print("Input array: ");
-    //     System.out.println(arrayToString(testArray));
-    //     int index = returnReverse(testArray);
-    //     System.out.println("New Reversed Array:"+index);
-    //     System.out.println("14. ===Done: Returnreverse ===\n");
+    public static int[] returnReverse(int[] array) {
+        int[] newArray = new int[array.length];
 
-    // }
+        for (int i = 0; i < array.length ; i++) {
+            newArray[array.length - 1 -i] = array [i];
+        }
+            return newArray; 
+    }
+
+    //Tester for returnReversefunction
+    public static void testReturnReverse(){
+        int [] testArray={1,2,3,4};
+        System.out.println("14.===== Testing: returnReverse ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int[] reverse = returnReverse(testArray);
+        System.out.println("Reversed New Array:"+arrayToString(reverse));
+        System.out.println("14. ===Done: returnReverse===\n");
+
+    }
 
     //intersection pseudo code
     /* input: array[], array2[]
@@ -518,8 +536,8 @@ public class MyArray1{
         //testFindMinIndex();
         //testFindMax();
         //testFindMaxIndex();
-        //testReverse();
-        //testReturnReverse();
+        testReverse();
+        testReturnReverse();
         //testIntersection();
         //testUnion();
 
