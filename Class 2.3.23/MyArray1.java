@@ -514,7 +514,7 @@ public class MyArray1{
         testSwap();
         testIsElement();
         testIndexOf();
-        //testFindMin(); ********Create funtion for and so on*******
+        //testFindMin(); 
         //testFindMinIndex();
         //testFindMax();
         //testFindMaxIndex();
