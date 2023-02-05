@@ -275,47 +275,117 @@ public class MyArray1{
     // }
 
     //indexOf pseudo code
-    /* */
+    /* input: array[], int value
+    output:int index
+    method:
+        int index = -1
+        for i from 0 to n-1
+            if array[i]= element
+            return
+        return index*/
     //8. indexOffunction
     //Tester for indexOffunction
 
     //findMin pseudo code
-    /* */
+    /* input: array[]
+    output:int min
+    method:
+        int array[] = {}
+        int i ; min
+        min = array[0]
+        for (i=0; i<array.length;i++) 
+            if (min > array[i])
+            min = array[i]
+            return min*/
     //9. findMinfunction
     //Tester for findMinfunction
 
     //findMinIndex pseudo code
-    /* */
+    /* input: array[]
+    output:int minIndex
+    method:
+        for i from 0 to n-1
+            if array[i] = min
+            return i
+            */
     //10. findMinIndexfunction
     //Tester for findMinIndexfunction
 
     //findMax pseudo code
-    /* */
+    /* input: array[]
+    output:int max
+    method:
+        int array[] = {}
+        int i ; max
+        max = array[0]
+        for (i=0; i<array.length;i++) 
+            if (min < array[i])
+            min = array[i]
+            return max*/
     //11. findMaxfunction
     //Tester for findMaxfunction
 
     //findMaxIndex pseudo code
-    /* */
+    /* input: array[]
+    output:maxIndex
+    method:
+        for i from 0 to n-1
+            if array[i] = max
+            return i*/
     //12. findMaxIndexfunction
     //Tester for findMaxIndexfunction
 
     //reverse pseudo code
-    /* */
+    /* input: array[n]
+    output:array[n]
+    method:
+        for i=0 to n
+            tenp = array[i]
+            array[i] = array[n-i-1]
+            array[n-i-1]=temp
+            return array[n]*/
     //13. reversefunction
     //Tester for reversefunction
 
-    //returnReverse pseudo code
-    /* */
+    //returnReverse pseudo code                     
+    /* input: array[]
+    output:new array[]
+    method:
+        int array[] = {}
+        int new array [] = new int[array.length];
+        for i=0 to n
+            tenp = array[i]
+            array[i] = array[n-i-1]
+            array[n-i-1]=temp
+            new array[i] = array[i];
+        return new array*/
     //14. returnReversefunction
     //Tester for returnReversefunction
 
     //intersection pseudo code
-    /* */
+    /* input: array[], array2[]
+    output:new array[]
+    method:
+    int array[]= {}
+    int array2[]={}
+    for(int i =0; i<array.length;i++)
+        for (int j =0; i < array2.length; j++)
+            if (array[i]==array2[j])
+            new array[] = array2[]
+        return new array*/
     //15. intersectionfunction
     //Tester for intersectionfunction
 
     //union pseudo code
-    /* */
+    /* input: array[], array2[]
+    output:new array[]
+    method:
+        int array[]= {}
+        int array2[]={}
+        int a1 = array.length
+        int a2 = array2.length
+        new array[] = newvint[a1+a2]
+            return new array*/
     //16. unionfunction
     //Tester for unionfunction
 
