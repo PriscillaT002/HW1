@@ -535,7 +535,7 @@ public class MyArray1{
             for(int i =0; i<array.length;i++)
             for (int j =0; i < array2.length; j++)
                 if (array[i]==array2[j])
-                newArray[] = array2[]
+                int[] newArray = array2[]
             return newArray;
            }
 
