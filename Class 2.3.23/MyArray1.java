@@ -284,40 +284,39 @@ public class MyArray1{
             return
         return index*/
     //8. indexOffunction
-    public static int indexOf(int[] array, int value) {
-             {
-                int length = array.length;
-                int i = 0;
-                while (i< length) {
-                    if (array[i] == value){
-                        return i;
-                    }
-                    else {
-                        i = i + 1;
-                    }
-                }
-                return -1;
+    // public static int indexOf(int[] array, int value) {
+    //          {
+    //             int length = array.length;
+    //             int i = 0;
+    //             while (i< length) {
+    //                 if (array[i] == value){
+    //                     return i;
+    //                 }
+    //                 else {
+    //                     i = i + 1;
+    //                 }
+    //             }
+    //             return -1;
     
-             }
+    //          }
     
-          }
+    //       }
 
-    //Tester for indexOffunction
-    public static void testIndexOf(){
-
-             int [] testArray={1,2,3,4};
-             int value = 3;
-             System.out.println("8.===== Testing: indexOf ======");
-             System.out.print("Input array: ");
-             System.out.println(arrayToString(testArray));
-             System.out.print("Input value: ");
-             System.out.println(value);
-             int index = indexOf(testArray);
-             System.out.println("Index:"+index);
-             System.out.println("8. ===Done: indexOf===\n");
+    // //Tester for indexOffunction
+    //    public static void testIndexOf(){
+    //          int [] testArray={1,2,3,4};
+    //          int value = 3;
+    //          System.out.println("8.===== Testing: indexOf ======");
+    //          System.out.print("Input array: ");
+    //          System.out.println(arrayToString(testArray));
+    //          System.out.print("Input value: ");
+    //          System.out.println(value);
+    //          int index = indexOf(testArray);
+    //          System.out.println("Index:"+index);
+    //          System.out.println("8. ===Done: indexOf===\n");
     
-         }
-
+    //      }
+   
     //findMin pseudo code
     /* input: array[]
     output:int min
@@ -331,6 +330,16 @@ public class MyArray1{
             return min*/
     //9. findMinfunction
     //Tester for findMinfunction
+    public static void testFindMin(){
+        int [] testArray={1,2,3,4};
+        System.out.println("9.===== Testing: findMin ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int min = findMin(testArray);
+        System.out.println("Minimum:"+min);
+        System.out.println("9. ===Done: findMin===\n");
+
+    }
 
     //findMinIndex pseudo code
     /* input: array[]
@@ -342,6 +351,16 @@ public class MyArray1{
             */
     //10. findMinIndexfunction
     //Tester for findMinIndexfunction
+    public static void testFindMinIndex(){
+        int [] testArray={1,2,3,4};
+        System.out.println("10.===== Testing: findMinIndex ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int minIndex = findMinIndex(testArray);
+        System.out.println("MinIndex:"+minIndex);
+        System.out.println("10. ===Done: findMinIndex ===\n");
+
+    }
 
     //findMax pseudo code
     /* input: array[]
@@ -356,6 +375,16 @@ public class MyArray1{
             return max*/
     //11. findMaxfunction
     //Tester for findMaxfunction
+    public static void testFindMax(){
+        int [] testArray={1,2,3,4};
+        System.out.println("11.===== Testing: findMax ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int max = findMax(testArray);
+        System.out.println("Maximum:"+max);
+        System.out.println("11. ===Done: findMax===\n");
+
+    }
 
     //findMaxIndex pseudo code
     /* input: array[]
@@ -366,6 +395,16 @@ public class MyArray1{
             return i*/
     //12. findMaxIndexfunction
     //Tester for findMaxIndexfunction
+    public static void testFindMaxIndex(){
+        int [] testArray={1,2,3,4};
+        System.out.println("12.===== Testing: findMaxIndex ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int maxIndex = findMaxIndex(testArray);
+        System.out.println("MaxIndex:"+maxIndex);
+        System.out.println("12. ===Done: findMaxIndex ===\n");
+
+    }
 
     //reverse pseudo code
     /* input: array[n]
@@ -378,6 +417,16 @@ public class MyArray1{
             return array[n]*/
     //13. reversefunction
     //Tester for reversefunction
+    public static void testReverse(){
+        int [] testArray={1,2,3,4};
+        System.out.println("13.===== Testing: reverse ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int reverse = reverse(testArray);
+        System.out.println("Reversed Array:"+reverse);
+        System.out.println("13. ===Done: reverse ===\n");
+
+    }
 
     //returnReverse pseudo code                     
     /* input: array[]
@@ -393,6 +442,16 @@ public class MyArray1{
         return new array*/
     //14. returnReversefunction
     //Tester for returnReversefunction
+    public static void testReturnReverse(){
+        int [] testArray={1,2,3,4};
+        System.out.println("14.===== Testing: Returnreverse ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        int index = returnReverse(testArray);
+        System.out.println("New Reversed Array:"+index);
+        System.out.println("14. ===Done: Returnreverse ===\n");
+
+    }
 
     //intersection pseudo code
     /* input: array[], array2[]
@@ -407,6 +466,19 @@ public class MyArray1{
         return new array*/
     //15. intersectionfunction
     //Tester for intersectionfunction
+    public static void testIntersection(){
+        int [] testArray={1,2,3,4};
+        int [] testArray2={0,2,4,6};
+        System.out.println("15.===== Testing: Intersection ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        System.out.print("Input Second array: ");
+        System.out.println(arrayToString(testArray2));
+        int intersection = intersection(testArray, testArray2);
+        System.out.println("Intersection of Arrays:"+intersection);
+        System.out.println("15. ===Done: Intersection===\n");
+
+    }
 
     //union pseudo code
     /* input: array[], array2[]
@@ -420,6 +492,19 @@ public class MyArray1{
             return new array*/
     //16. unionfunction
     //Tester for unionfunction
+    public static void testUnion(){
+        int [] testArray={1,2,3,4};
+        int [] testArray2={0,2,4,6};
+        System.out.println("16.===== Testing: Union ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        System.out.print("Input Second array: ");
+        System.out.println(arrayToString(testArray2));
+        int union = union(testArray, testArray2);
+        System.out.println("Union of Arrays:"+union);
+        System.out.println("16. ===Done: Union===\n");
+
+    }
 
 
 
@@ -436,7 +521,7 @@ public class MyArray1{
         //testFindAverage();
         //testSwap();
         //testIsElement();
-        testIndexOf();
+        //testIndexOf();
         //testFindMin();
         //testFindMinIndex();
         //testFindMax();
