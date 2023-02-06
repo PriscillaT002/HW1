@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 
 
-public class MyArray1{
+public class MyArray2{
 
     // 0. helper functions
      static String arrayToString(int[] array){
@@ -532,12 +532,19 @@ public class MyArray1{
     //15. intersectionfunction
     public static int[] intersection(int[] array, int[] array2) {
         {
+            int[] newArray = new int[array.length];
+
+            if (array.length < array2.length)
+
             for(int i =0; i<array.length;i++)
             for (int j =0; i < array2.length; j++)
-                if (array[i]==array2[j])
-                int[] newArray = array2[]
-            return newArray;
+                if (array[i]==array2[j]){
+
+                }
+
+            
            }
+        return newArray;
 
         }
     //Tester for intersectionfunction
