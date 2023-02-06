@@ -566,20 +566,30 @@ public class MyArray1{
         new array[] = newvint[a1+a2]
             return new array*/
     //16. unionfunction
-    //Tester for unionfunction
-    // public static void testUnion(){
-    //     int [] testArray={1,2,3,4};
-    //     int [] testArray2={0,2,4,6};
-    //     System.out.println("16.===== Testing: Union ======");
-    //     System.out.print("Input array: ");
-    //     System.out.println(arrayToString(testArray));
-    //     System.out.print("Input Second array: ");
-    //     System.out.println(arrayToString(testArray2));
-    //     int union = union(testArray, testArray2);
-    //     System.out.println("Union of Arrays:"+union);
-    //     System.out.println("16. ===Done: Union===\n");
+    public static int[] union(int[] array, int[] array2) {
+        {
+            for(int i =0; i<array.length;i++)
+            for (int j =0; i < array2.length; j++)
+                if (array[i]==array2[j])
+                int[] newArray = array2[]
+            return newArray;
+           }
 
-    // }
+        }
+    //Tester for unionfunction
+    public static void testUnion(){
+        int [] testArray={1,2,3,4};
+        int [] testArray2={0,2,4,6};
+        System.out.println("16.===== Testing: Union ======");
+        System.out.print("Input array: ");
+        System.out.println(arrayToString(testArray));
+        System.out.print("Input Second array: ");
+        System.out.println(arrayToString(testArray2));
+        int union = union(testArray, testArray2);
+        System.out.println("Union of Arrays:"+union);
+        System.out.println("16. ===Done: Union===\n");
+
+    }
 
 
 
@@ -604,7 +614,7 @@ public class MyArray1{
         testReverse();                  /*FIX*/
         testReturnReverse();
         testIntersection();
-        //testUnion();
+        testUnion();
 
     }
 
