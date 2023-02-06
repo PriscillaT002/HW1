@@ -531,22 +531,26 @@ public class MyArray2{
         return new array*/
     //15. intersectionfunction
     public static int[] intersection(int[] array, int[] array2) {
-        {
-            int[] newArray = new int[array.length];
-
-            if (array.length < array2.length)
-
-            for(int i =0; i<array.length;i++)
-            for (int j =0; i < array2.length; j++)
-                if (array[i]==array2[j]){
-
+        int[] newArray = new int[array.length]; 
+        int i;
+        int j;
+        int x = 0;
+        for (i = 0; i < array.length; i++) {
+            for (j = 0; j < array2.length; j++) {
+                if (array[i] == array2[j]) {
+                    System.out.println(array[i]);
+                    newArray[x] = array[i];
+                    x++;
+                    break;
                 }
-
-            
-           }
-        return newArray;
-
+            }
         }
+        int[] finalArray = new int[x];
+        for (int y = 0; y < x; y++) {
+            finalArray[y] = newArray[y];
+        }
+        return finalArray;
+    }
     //Tester for intersectionfunction
     public static void testIntersection(){
         int [] testArray={1,2,3,4};
@@ -592,7 +596,7 @@ public class MyArray2{
         System.out.println(arrayToString(testArray));
         System.out.print("Input Second array: ");
         System.out.println(arrayToString(testArray2));
-        int union = union(testArray, testArray2);
+        int[] union = union(testArray, testArray2);
         System.out.println("Union of Arrays:"+union);
         System.out.println("16. ===Done: Union===\n");
 
@@ -618,7 +622,7 @@ public class MyArray2{
         testFindMinIndex();
         testFindMax();
         testFindMaxIndex();
-        testReverse();                  /*FIX*/
+        testReverse();                  
         testReturnReverse();
         testIntersection();
         testUnion();
